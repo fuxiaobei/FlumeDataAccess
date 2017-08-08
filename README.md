@@ -1,0 +1,3 @@
+# FlumeDataAccess
+
+Flume自定义source和sink接入SDTP协议的socket文本数据，目前青海和陕西已经实施
