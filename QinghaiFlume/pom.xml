@@ -2,9 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.asiainfo.ocdp</groupId>
+  <parent>
+        <groupId>com.asiainfo.ocdp</groupId>
+        <artifactId>FlumeDataAccess</artifactId>
+        <version>1.0.1</version>
+  </parent>
+  
+  <name>QinghaiFlume</name>
   <artifactId>QinghaiFlume</artifactId>
-  <version>1.0.1</version>
   <packaging>jar</packaging>
   
 
@@ -15,39 +20,9 @@
   <dependencies>
 
         <dependency>
-            <groupId>org.apache.flume</groupId>
-            <artifactId>flume-ng-core</artifactId>
-            <version>1.5.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.flume</groupId>
-            <artifactId>flume-ng-sdk</artifactId>
-            <version>1.5.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.flume</groupId>
-            <artifactId>flume-ng-configuration</artifactId>
-            <version>1.5.2</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka_2.10</artifactId>
             <version>0.10.0.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.2</version>
         </dependency>
 
         <dependency>
@@ -59,30 +34,5 @@
         </dependency>
         
     </dependencies>
-
-    <build>
-        <plugins>
-           
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
-
-        </plugins>
-
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>**/*.jar</exclude>
-                </excludes>
-                <filtering>false</filtering>
-            </resource>
-        </resources>
-    </build>
     
 </project>
