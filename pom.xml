@@ -8,8 +8,9 @@
   <packaging>pom</packaging>
   
   <modules>
-		<module>QinghaiFlume</module>
-	
+      <module>QinghaiFlume</module>
+      <module>ShanxiFlume</module>
+
   </modules>
 
   <dependencies>
